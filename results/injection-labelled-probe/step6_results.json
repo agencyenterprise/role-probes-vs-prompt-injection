@@ -1,0 +1,71 @@
+{
+  "zero_shot_whole": {
+    "auc_all": 0.5900938461538461,
+    "ap_all": 0.7712506250537288,
+    "auc_test": 0.5831438639392232,
+    "ap_test": 0.7769725084435036
+  },
+  "zero_shot_window": {
+    "auc_all": 0.6256761538461539,
+    "ap_all": 0.7899207275166661,
+    "auc_test": 0.6213937849459411,
+    "ap_test": 0.7944664166979708
+  },
+  "trained_surface": {
+    "selected_C": 0.03,
+    "dev_cv_auc": 0.7955645615220084,
+    "n_train": 591,
+    "test_auc": 0.7719944773392315,
+    "test_ap": 0.8927872736785543,
+    "test_recall_at_fpr_0.01": 0.07639680729760548,
+    "test_recall_at_fpr_0.05": 0.2782212086659065,
+    "test_fpr": 0.5391566265060241,
+    "test_fnr": 0.14367160775370583,
+    "robustness_auc_mean": 0.7878561630770198,
+    "robustness_auc_std": 0.013328357698148325,
+    "placebo_vs_injected_auc": 0.7639346153846154,
+    "top_features": [
+      [
+        "phrase_hit",
+        0.49570590178063706
+      ],
+      [
+        "window_max",
+        0.3894210100663714
+      ],
+      [
+        "scaled:role_word_rate",
+        0.3739687296850647
+      ],
+      [
+        "raw:role_word_rate",
+        0.2999563095191732
+      ],
+      [
+        "max_line_len",
+        0.21731314985772993
+      ],
+      [
+        "tagish_density",
+        0.14639394778293552
+      ],
+      [
+        "raw:second_person_rate",
+        -0.1454447885454047
+      ],
+      [
+        "scaled:politeness_request_rate",
+        0.140916453100694
+      ],
+      [
+        "punct_density",
+        0.12167087527604319
+      ],
+      [
+        "raw:modal_directive_rate",
+        -0.12043502062555782
+      ]
+    ]
+  },
+  "auc_gap_activations_minus_surface": 0.20374771606379916
+}

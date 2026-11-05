@@ -1,0 +1,42 @@
+{
+  "_convention": "recall = max(TPR | FPR <= 0.01) from sklearn.roc_curve, matching step3_train.py / e4_generalization.py",
+  "_basis": "test = the 1,209-row held-out split, the only basis on which the injection-labelled probe can be reported",
+  "userness probe, original (L8)": {
+    "test": {
+      "auc": 0.6611857921995852,
+      "recall_at_1fpr": 0.046750285062713795,
+      "precision_1k": 0.004657910552212337,
+      "n": 1209,
+      "n_pos": 877,
+      "n_neg": 332
+    },
+    "full": {
+      "auc": 0.6394930769230769,
+      "recall_at_1fpr": 0.05076923076923077,
+      "precision_1k": 0.005056308894507009,
+      "n": 1800,
+      "n_pos": 1300,
+      "n_neg": 500
+    },
+    "source": "Experiments/Baseline Probe/scores/scores-L8-in_situ.jsonl"
+  },
+  "userness probe, retrained (L16)": {
+    "test": {
+      "auc": 0.6179112115508785,
+      "recall_at_1fpr": 0.10148232611174458,
+      "precision_1k": 0.010056235826639533,
+      "n": 1209,
+      "n_pos": 877,
+      "n_neg": 332
+    },
+    "full": {
+      "auc": 0.6030292307692308,
+      "recall_at_1fpr": 0.10307692307692308,
+      "precision_1k": 0.010212636231994513,
+      "n": 1800,
+      "n_pos": 1300,
+      "n_neg": 500
+    },
+    "source": "Experiments/AUG-2-dense-model-replication/scores/gptoss-20b-retrained/scores-in_situ-L16.jsonl"
+  }
+}

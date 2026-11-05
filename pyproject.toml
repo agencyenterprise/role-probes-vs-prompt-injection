@@ -1,0 +1,30 @@
+[project]
+name = "roleprobe"
+version = "0.1.0"
+description = "Train linear role probes (system/user/tool/cot/assistant) on LLM hidden states"
+requires-python = ">=3.11"
+dependencies = [
+    "torch>=2.8",
+    "transformers>=4.56,<5",
+    "datasets>=3.2",
+    "safetensors>=0.4",
+    "numpy>=2",
+    "tqdm>=4.66",
+    "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+gptoss = ["kernels>=0.6", "triton>=3.4"]
+
+[project.scripts]
+roleprobe-train = "roleprobe.train:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/roleprobe"]

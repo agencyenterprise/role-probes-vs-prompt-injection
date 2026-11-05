@@ -1,0 +1,20 @@
+{
+ "gpt-oss-20b L8": {
+  "thr": 0.620662,
+  "recall_all_at_10fpr": 0.2523076923076923,
+  "recall_success_at_10fpr": 0.22641509433962265,
+  "n_successful": 106
+ },
+ "qwen3-14b L20": {
+  "thr": 0.941746,
+  "recall_all_at_10fpr": 0.2753846153846154,
+  "recall_success_at_10fpr": 0.1732283464566929,
+  "n_successful": 127
+ },
+ "apriel L24": {
+  "thr": 0.60726,
+  "recall_all_at_10fpr": 0.3261538461538461,
+  "recall_success_at_10fpr": 0.2222222222222222,
+  "n_successful": 54
+ }
+}

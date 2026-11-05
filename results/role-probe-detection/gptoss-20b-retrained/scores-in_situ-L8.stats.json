@@ -1,0 +1,39 @@
+{
+  "config": {
+    "batch_size": 8,
+    "context_mode": "in_situ",
+    "gen_max_seq_len": 2304,
+    "harness_version": "1.1.0",
+    "layer": 8,
+    "pad_buckets": [
+      1024,
+      2048,
+      2304
+    ],
+    "roll_window": 10,
+    "score_max_seq_len": 2304
+  },
+  "elapsed_s": 394.9,
+  "git_rev": null,
+  "n_prompt_tokens": {
+    "max": 1586,
+    "p50": 606
+  },
+  "n_records": 1800,
+  "reproducibility": null,
+  "stats": {
+    "clamped_spans": 0,
+    "dropped_spans": 0,
+    "hash_checked": 1800,
+    "n": 1800,
+    "no_content": 0,
+    "pad_width_counts": {
+      "1024": 1544,
+      "2304": 256
+    },
+    "payload_truncated": 0,
+    "samples_with_clamped_spans": 0,
+    "samples_with_dropped_spans": 0,
+    "truncated": 0
+  }
+}
